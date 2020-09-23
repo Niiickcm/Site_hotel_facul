@@ -1,0 +1,569 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Update sem Where - Plaza Hotel</title>
+
+  <link rel="shortcut icon"  type="image/x-icon" href="img/favicon.ico" >
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!-- puxando o css do projeto e o bootstrap-->
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css1/modern-business.css" rel="stylesheet">
+	    <link href="css1/bootstrap.min.css" rel="stylesheet">
+    <link href="css1/modern-business.css" rel="stylesheet">
+
+<!--- puxar o css do bootstrap pra fazer o carrossel de imagens -->
+    		<link rel="stylesheet" href="css1/bootstrap.css" />
+    	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="css1/js/bootstrap.js"></script>
+      
+        <script type="text/javascript">
+          function funcao1()
+         {
+            alert("Pagina em Desenvolvimento!");
+         }
+        </script>
+
+	
+	<link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">	
+<style type="text/css">
+	<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  max-width:700px;
+  float: left;
+  left:-1%;
+  margin-top: -100px;
+  border-radius: 10px;
+  margin-left: 15px;
+  box-shadow: 5px 10px 8px 10px #adabab; margin-left: 20px;
+  padding: 1px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -30px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background: linear-gradient(90deg,#00000045,rgba(0,0,0,.3))!important;!important;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+
+  
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.10%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+	  opacity: 1;
+	}
+
+	.informacoes {
+		position: relative;
+		width: 400px;
+		height: 515px;
+		float: right;
+	    margin-top: -100px;
+	    border-radius: 10px;
+	    margin-right: 110px;
+	    box-shadow: 0px 0px 0px 1px #bdbdbd; margin-left: 20px;
+	}
+
+	.button {
+		background-color: #007bc2;
+        border: 0;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 550;
+        border-radius: 16px;
+        height: 60px;
+        width: 194px;
+        margin-left: 180px;
+        margin-top: 100px;
+        left: 10px;
+
+	}
+
+	.button:hover{
+		background-color: #0074c56e;
+	}
+
+	.button2 {
+		background-color: #333;
+        border: 0;
+        color: #fff;
+        font-size: 14px;
+        
+        border-radius: 10px;
+        height: 35px;
+        width: 155px;
+        margin-left: 217px;
+        margin-top: 40px;
+        left: 10px;
+	}
+
+	.button2:hover{
+		background-color: #ffc801;
+	}
+	#teste3{position:relative;top:0;padding:4px;
+         transition: all .3s ease-in-out}
+         #teste3:hover{top:-15px;box-shadow:0 4px 3px #999}
+
+         /* Dropdown Button */
+.dropbtn {
+ 
+  color: #403a3a;
+  font-family: "Century gothic";
+  padding: 16px;
+  font-size: 21px;
+  border: none;
+  position:relative;top:0;padding:4px;
+         transition: all .3s ease-in-out
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #191970;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
+
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color:  #1919706b; border-radius: 10px;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {left: 4-px; color: #3b3bbd;}
+
+ .mais {
+
+  font-family:"Century gothic regular";
+  font-size:14px;
+  font-weight: bold;
+ }
+
+ .image-menu {
+ 	width: 24px;
+ 	height: 24px;
+
+ }
+
+ .fundo{
+    width: 100%;
+    height: 200px;
+    margin-top: -60px;
+    border-radius: 28px 28px 28px 10px;
+    background-color: #001536;
+ }
+ .fundo2{
+       width: 100%;
+    height: 130px;
+    border-radius: 28px 28px 28px 10px;
+    margin-top: -100px;
+    background-color: white;
+ }
+	</style>
+
+</head>
+
+<body>
+
+
+
+<div class="topo">
+
+<!-- imagem do menu -->
+<div class="img"><a href="index.html"><img src="img/logo.png" width="180px" height="88px"align="right" style="user-select: none; margin-top: 20px" ></a></div>
+
+<!-- div do menu -->
+
+<div class="menu" style=" margin-top: -60px">
+
+    <ul style="margin-top: 10px;">
+        <li style="width:113px; " class="dropdown" ><a href="index.html" class="dropbtn" >
+        <i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a></li>
+
+        <li style="width:140px; "  class="dropdown"><a href="pacotes.html" class="dropbtn" style=" padding: 0px;">
+        <i class="fa fa-ticket fa-lg" aria-hidden="true"></i> Passagens</a></li>
+
+        <li style="width:140px; "  class="dropdown"><a href="pacotes.html" class="dropbtn" style=" padding: 10px;">
+        <i class="fa fa-suitcase" aria-hidden="true"></i> Pacotes</a></li>
+
+        <li style="width:145px; "  class="dropdown"><a href="cruzeiros.html" class="dropbtn" style=" padding: 0px;">
+        <i class="fa fa-ship" aria-hidden="true"></i> Cruzeiros</a></li>
+
+        <li style="width:120px; "  class="dropdown"><a href="hoteis.html" class="dropbtn" style=" padding: 0px;">
+        <i class="fa fa-building" aria-hidden="true"></i> Hoteis</a></li>
+
+        <li style="width:120px; "  class="dropdown"><a href="resorts.html" class="dropbtn" style=" padding: 0px;">
+        <i class="fa fa-building" aria-hidden="true"></i> Resorts</a></li>
+
+        <div class="dropdown">
+        <a class="dropbtn" style="padding: 0px; cursor: pointer; text-decoration: none;">Mais <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+        <div class="dropdown-content">
+          <a class="mais" href="dicasviagem.html"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;Dicas de Viagens</a>
+          <a class="mais" href="contato.html"><i class="fa fa-headphones fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;Contato</a>
+        </div>
+      </div>
+    </ul>
+        </div>      
+    </div>  
+    <!-- FIM--> 
+<br>
+     <br>
+     <br>
+     <br>
+               <div class="fundo">
+    
+               </div>
+               <div class="fundo2">
+                   
+               </div>
+     
+
+	  <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="informacoes" style="margin-top: -200px; user-select: none;">
+    	<br>
+    	   <div style="font-family: Roboto; font-size: 26px; font-weight: 700; margin-left: 30px;">Plaza Hotel</div>
+    	<br>
+    	<br>
+    	   <img src="img/estrelas3.png" style="height: 50px; width: 40%; position: absolute; left: 12px; top: 60px; ">
+    	<br>
+    	   <div style="font-family: Roboto; font-size: 18px; font-weight: 700; margin-left: 30px;">Av. Amaralina, 74 , Salvador, Brasil</div>
+        <br>
+           <div style="font-family: Roboto; font-size: 15px; font-weight: 400; margin-left: 30px;">A poucos passos da Escadaria Segundo Sol.</div>
+
+           <hr style=" width: 340px; border-color: #bdbdbd  ">
+
+           <div style="font-family: Roboto; font-size: 22px; font-weight: 700; margin-left: 30px;">Quarto Superior</div>
+
+           <img src="img/cafe.png" style=" margin-left: 15px;position: absolute; left: 12px; top: 300px;">
+           <p style=" font-size: 18px; margin-left: 30px; position: absolute; left: 50px; top: 303px;">Sem Café</p> 
+           <p style="font-family: Roboto; font-size: 20px; font-weight: 500px; margin-left: -19px; position: absolute; left: 50px; top: 358px;">Diária</p>
+           <p style="color: #263c70; font-size: 22px; font-weight: 400px; margin-left: -19px; position: absolute; left: 50px; top: 400px;">R$</p>
+           <p style="color: #263c70; font-size: 42px; font-weight: 400px; margin-left: -19px; position: absolute; left: 80px; top: 380px;">76</p>
+           <p style="font-size: 14px; font-weight: 400px; margin-left: -49px; position: absolute; left: 80px; top: 440px;">Pagamento parcelado</p>
+           <p style="font-size: 14px;  margin-left: -49px; position: absolute; left: 80px; top: 465px;">Taxas incluídas
+           </p>
+           <p style="font-size: 19px;  margin-left: -49px; position: absolute; left: 229px; top: 358px;">Total para 3 diárias</p>
+           <strong style=" font-size: 22px; margin-left: -49px; position: absolute; left: 229px; top: 388px;">R$ 226</strong>
+
+           <button class="button2" onclick="outraPagina()">Escolher outro quarto</button>
+           <button class="button"  onclick="funcao1()" value="Exibir Alert"><p style="margin-left: -78px; margin-top: 17px;">Reservar</p><img src="img/seta.button.png" style="filter: invert(1); margin-left: 130px; margin-top: -73px; color: #fff;" > </button>
+
+    </div>
+	   <!-- carrossel de imagens -->
+	   
+<!-- Container for the image gallery -->
+<div class="container" style="margin-top: -200px; margin-left: 80px; border-radius: 10px 10px 10px 10px; user-select: none;">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides"  >
+    <div class="numbertext">1 / 6</div>
+      <img src="img/imagem1.jpg" style=" width: 698px; height: 400px; border-radius: 10px 10px 0px 0px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="img/imagem2.jpg" style=" width: 698px; height: 400px; border-radius: 10px 10px 0px 0px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="img/imagem3.jpg" style=" width: 698px; height: 400px; border-radius: 10px 10px 0px 0px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="img/imagem4.jpg" style=" width: 698px; height: 400px; border-radius: 10px 10px 0px 0px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="img/imagem5.jpg" style=" width: 698px; height: 400px; border-radius: 10px 10px 0px 0px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="img/imagem6.jpg" style=" width: 698px; height: 400px; border-radius: 10px 10px 0px 0px;">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row" style="margin-right: -10px;">
+    <div class="column" style="margin-left: 15px;" >
+      <img class="demo cursor" src="img/imagem1.jpg" style="width:100%; border-radius: 0px 0px 0px 10px;" onclick="currentSlide(1)" alt="quarto 1">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/imagem2.jpg" style="width:100%" onclick="currentSlide(2)" alt="quarto 2">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/imagem3.jpg" style="width:100%" onclick="currentSlide(3)" alt="quarto 3">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/imagem4.jpg" style="width:100%" onclick="currentSlide(4)" alt="quarto 4">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/imagem5.jpg" style="width:100%" onclick="currentSlide(5)" alt="piscinas">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/imagem6.jpg" style="width:100%; border-radius: 0px 0px 0px 10px;" onclick="currentSlide(6)" alt="quarto 5">
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<strong style="margin-top: 100px; font-size: 18px; font-weight: 400px; margin-left: -20px; position: absolute; left: 80px; top: 810px;">Sobre o Hotel</strong>
+<br>
+<p style="margin-top: 110px; margin-left: -20px; position: absolute; left: 80px; top: 850px;">O B Hotel é moderno, econômico e preza pelo consumo consciente, cobrando preços justos por ligações telefônicas e produtos do frigobar. A internet é gratuita e a maior preocupação do hotel é o seu conforto, satisfação e experiências únicas de viagem, contando com recepcionistas bem orientadas e que possuem as melhores informações de city tours e atrações da cidade. Para que você volte sempre! Curta Salvador com todo o help do B Hotel para conseguir ir até os melhores lugares, sinta-se como um morador local e aproveite o melhor da Bahia ;)
+</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<script>
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+function outraPagina(){
+  window.location.href = "hoteis.html"
+}
+</script>
+
+	  
+
+    
+	<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- rodapé -->
+    <footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <img src="img/logo.png" width="200px" height="100px" >
+        <!-- links do rodapé -->
+        <p class="footer-links">
+          <a href="#">Home</a>
+          ·
+          <a href="#">Sobre nós</a>
+          ·
+          ·
+          <a href="#">Contato</a>
+          ·
+          
+        </p>
+            <!-- nome da empresa-->
+        <p class="footer-company-name">Update Sem Where &copy; 2020</p>
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <!-- local -->
+          <i class="fa fa-map-marker"></i>
+          <p><span>Vila Carrão</span>São Paulo, Brasil</p>
+        </div>
+
+        <div>
+          <!-- telefone -->
+          <i class="fa fa-phone"></i>
+          <p><br>+55 11 2020-2020</p>
+        </div>
+
+        <div>
+          <!-- email -->
+          <i class="fa fa-envelope"></i>
+          <p><a href="http://www.gmail.com" style="color:white;">contato@updatesemwhere.com.br</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about" align="justify">
+          <span>Sobre a Update Sem Where</span>
+          Nós somos um grupo de 6 alunos da Universidade Cidade de São Paulo e fizemos um projeto para uma agência de turismo.
+        </p>
+
+
+      </div>
+
+    </footer>
+
+
+		
+</body>
+
+
+</html>
